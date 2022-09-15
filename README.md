@@ -98,7 +98,7 @@ While we can use the indirect component as-is in first approximation, the direct
 
 ![lightcomposition](./img/angleofincident.png) 
 
-$\alpha $ is the sun's elevation, which can be determined by location and time. $\beta $ is a little more tricky, as it is an angle between two 3D vectors: the sunlight (represented e.g. as azimut+elevation) and the plant (represented as the pv plane's normal vector, derived from orientation+tilt). The rest is trigonometry. 
+$\alpha$ is the sun's elevation, which can be determined by location and time. $\beta$ is a little more tricky, as it is an angle between two 3D vectors: the sunlight (represented e.g. as azimut+elevation) and the plant (represented as the pv plane's normal vector, derived from orientation+tilt). The rest is trigonometry. 
 
 Now that we know the effective irradiation power for our pv plane, we can model the pv plant itself. The most simple model is a constant correction factor, which we can derive from the energy conversion efficiency of the modules and inverter and the area of all modules. The overall conversion efficiency is typically less than 20% and thus not negligable.
 
