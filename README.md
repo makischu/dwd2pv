@@ -62,7 +62,7 @@ Possible improvements/alternatives:
 
 The most relevant parameter for our goal - Rad1h - is not offered for every station. "Grundsätzlich gilt, dass MOSMIX konservativ vorgeht und statt einer schlechten Vorhersage tendenziell Fehlwerte ausgibt." [8] So the first step is local interpolation. In my case - I live in the middle between 2 stations that do offer Rad1h - I just take the mean value of 2 stations. 
 
-`Rad1h` stands for `Global Irradiance` in `kJ/m2` [9]. I is the sum over the last hour (`1h`) before the timestamp (which are in UTC btw) [10]. Or said otherwise: the *mean* value of power [per 1 *flat* m²] for 1 hour. I asked DWD for a confirmation but no response so far. Plotting this results in stair steps, because 1 hour is a poor resolution if you want to plot the temporal behaviour for 1 day. 
+`Rad1h` stands for `Global Irradiance` in `kJ/m2` [9]. I is the sum over the last hour (`1h`) before the timestamp (which are in UTC btw) [10]. Or said otherwise: the *mean* value of power [per 1 *flat* m²] for 1 hour. Plotting this results in stair steps, because 1 hour is a poor resolution if you want to plot the temporal behaviour for 1 day. 
 
 Let's do some temporal interpolation, in a way that
 - there are no steps (continous shape), but
@@ -138,7 +138,7 @@ Some recommendations for futher reading.
 [6] https://github.com/jdemaeyer/brightsky <BR/>
 [7] https://dwd-geoportal.de/products/G_E6D/ <BR/>
 [8] https://www.dwd.de/DE/leistungen/met_verfahren_mosmix/faq/faq_mosmix_node.html <BR/>
-[9] mosmix_elemente.xls from https://www.dwd.de/DE/leistungen/opendata/hilfe.html
+[9] mosmix_elemente.xls from https://www.dwd.de/DE/leistungen/opendata/hilfe.html <BR/>
 [10] per mail from DWD: "Rad1h ist die Globalstrahlung als Summe über die vergangene Stunde."
 
 [I1] https://www.researchgate.net/publication/330220556_Elevated_Plus_Maze_Test_Combined_with_Video_Tracking_Software_to_Investigate_the_Anxiolytic_Effect_of_Exogenous_Ketogenic_Supplements <BR/>
